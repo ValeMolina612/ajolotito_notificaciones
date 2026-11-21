@@ -1,30 +1,9 @@
 # Ajolotito Notificaciones
 
-Aplicación Flutter desarrollada con TDD. Controla el hambre de una mascota virtual y programa avisos locales responsables, con horario silencioso, categorías configurables y permisos solicitados en contexto.
 
-## Funciones
-
-- Ajolotito con nivel de hambre y estado de ánimo.
-- Alimentación persistente con `SharedPreferences`.
-- Avisos locales nativos en Android, sin API ni servidor.
-- Horario tranquilo de 22:00 a 08:00 y máximo dos avisos diarios.
-- Permiso explicado antes del diálogo del sistema.
-- Categorías configurables y payload validado.
-
-## Ejecutar
-
-```powershell
-flutter pub get
-flutter test
-flutter emulators --launch medium_phone
-flutter run -d emulator-5554
-```
-
-No se necesita llave de API. En Android 13 o superior acepta el permiso cuando la app lo solicite.
 
 ## Pruebas y fases TDD
 
-La suite contiene 17 verificaciones automatizadas. Las capturas están recortadas para mostrar claramente la terminal y se presentan una debajo de otra.
 
 ### Ronda 1: Preparación del proyecto
 
@@ -232,13 +211,5 @@ La suite contiene 17 verificaciones automatizadas. Las capturas están recortada
 
 ![Ronda 13 refactor](docs/capturas/ronda-13-refactor.png)
 
----
 
-## APK
-
-```powershell
-flutter build apk --debug
-```
-
-Salida: `build/app/outputs/flutter-apk/app-debug.apk`.
 
